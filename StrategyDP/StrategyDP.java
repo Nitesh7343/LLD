@@ -40,3 +40,20 @@ interface FlyableRobot{
     void fly();
 }
 
+class NormalWalk implements WalkableRobot{
+    public void walk() {
+        System.out.println("I walk normally");
+    }
+}
+
+class JumpWalk implements WalkableRobot{
+    public void walk() {
+        System.out.println("I walk by jumping");
+    }
+}
+
+class NoWalk implements WalkableRobot{
+    public void walk() {
+        System.out.println("I cant't walk");
+    }
+}
