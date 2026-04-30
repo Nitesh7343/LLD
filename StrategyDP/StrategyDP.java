@@ -1,0 +1,29 @@
+import java.util.*;
+
+class Robot{
+    WalkableRobot wr;
+    TalkableRobot tr;
+    FlyableRobot fr;
+
+    public Robot(WalkableRobot wr, TalkableRobot tr, FlyableRobot fr) {
+        this.wr = wr;
+        this.tr = tr;
+        this.fr = fr;
+    }
+
+    void walk() {
+        wr.walk();
+    }
+
+    void talk() {
+        tr.talk();
+    }
+
+    void fly() {
+        fr.fly();
+    }
+
+    void projection() {
+        System.out.println("I'm normally projected");
+    }
+}
