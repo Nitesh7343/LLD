@@ -57,3 +57,15 @@ class NoWalk implements WalkableRobot{
         System.out.println("I cant't walk");
     }
 }
+
+class NormalTalk implements TalkableRobot{
+    public void talk() {
+        System.out.println("I talk normally");
+    }
+}
+
+class NoTalk implements TalkableRobot{
+    public void talk() {
+        System.out.println("I can't talk");
+    }
+}
