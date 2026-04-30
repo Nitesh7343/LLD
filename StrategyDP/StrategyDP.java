@@ -90,6 +90,15 @@ class WingFly implements FlyableRobot{
 
 public class StrategyDP {
     public static void main(String[] args) {
-        
+        Robot rubi = new Robot(new NoWalk(),new NormalTalk(),new JetFly());
+        rubi.walk();
+        rubi.talk();
+        rubi.fly();
+        System.out.println("-----------------------");
+
+        Robot dora = new Robot(new JumpWalk(), new NoTalk(),new WingFly());
+        dora.walk();
+        dora.talk();
+        dora.fly();
     }
 }
