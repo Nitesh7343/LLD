@@ -87,3 +87,9 @@ class WingFly implements FlyableRobot{
         System.out.println("I fly with wings");
     }
 }
+
+public class StrategyDP {
+    public static void main(String[] args) {
+        
+    }
+}
