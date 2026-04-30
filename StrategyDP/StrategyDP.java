@@ -27,3 +27,16 @@ class Robot{
         System.out.println("I'm normally projected");
     }
 }
+
+interface  WalkableRobot{
+    void walk();
+}
+
+interface  TalkableRobot{
+    void talk();
+}
+
+interface FlyableRobot{
+    void fly();
+}
+
