@@ -69,3 +69,21 @@ class NoTalk implements TalkableRobot{
         System.out.println("I can't talk");
     }
 }
+
+class JetFly implements FlyableRobot{
+    public void fly() {
+        System.out.println("I fly by jet");
+    }
+}
+
+class NoFly implements FlyableRobot{
+    public void fly() {
+        System.out.println("I can't fly");
+    }
+}
+
+class WingFly implements FlyableRobot{
+    public void fly() {
+        System.out.println("I fly with wings");
+    }
+}
