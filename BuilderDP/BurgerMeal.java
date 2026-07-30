@@ -23,4 +23,37 @@ public class BurgerMeal {
                 + ", drink=" + drink + "]";
     }
 
+    public static class BurgerBuilder{
+        private final String patty;
+        private final String bun;
+
+        private String sides;
+        private boolean hasCheese;
+        private String drink;
+
+        public BurgerBuilder(String patty, String bun) {
+            this.patty = patty;
+            this.bun = bun;
+        }
+
+        public BurgerBuilder hasCheese(boolean hasCheese) {
+            this.hasCheese = hasCheese;
+            return this;
+        }
+
+        public BurgerBuilder hasSides(String sides) {
+            this.sides = sides;
+            return this;
+        }
+
+        public BurgerBuilder hasDrink(String drink) {
+            this.drink = drink;
+            return this;
+        }
+
+        public BurgerMeal build() {
+            return new BurgerMeal(this);
+        }
+    }
+
 }
