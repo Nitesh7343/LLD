@@ -64,10 +64,13 @@ class TreeType{
 }
 
 class TreeTypeFactory{
+
     static Map<String,TreeType> map = new HashMap<>();
 
     public static TreeType getTreeType(String name, String color, String texture) {
         String key = name+color+texture;
+
+        //Memoising
         if(map.containsKey(key)) return map.get(key);
         else {
             TreeType treeType = new TreeType(name,color,texture);
